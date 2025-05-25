@@ -36,7 +36,6 @@ fre country
 * Excluding Non-EU member countries 
 drop if inlist(country, 29, 28, 24, 21, 17, 16, 1, 4)
 
-
 ********************************************************************************
 ***************************Dependent Variables**********************************
 ********************************************************************************
@@ -48,7 +47,7 @@ fre euftf
 fre trstep
 * ! 9.55% of sample Don't know 
 
-* 3) Support for Eurosceptic parties (in progress) -- 
+* 3) Support for Eurosceptic parties -- 
 * Using CHES 2010 data to determine Euroscepticism of parties. For each party, I associate the measure on their EU position to determine the extent of Euroscepticism in vote choices. 
 * Given that ESS data on voting behaviour may cover some elections not considered by CHES 2010, when scores not provided in 2010, the CHES 2014 will be used. 
 gen eurosk=.
@@ -364,12 +363,6 @@ histogram eurosk, bin(50) normal
 * Objective indicators of social disintegration
 * 1) Occupational class 
 * Daniel Oesch's scheme (2008)
-* Following insights of the social disintegration theory, we expect the lower social strata to be more likely to suffer from disintegration due to their marginal role in society
-* This intuition aligns with the Losers of Globalization theory, positing that disadvantaged social classes are more likely to develop marginalization
-*ISCO08
-* 8-Class scheme 
-iscooesch oeschclass08, isco(isco08) emplrel(emplrel) emplno(emplno) eight replace
-fre oesch8_oeschclass08
 * 5-Class scheme 
 iscooesch oeschclass08, isco(isco08) emplrel(emplrel) emplno(emplno) five replace
 fre oesch8_oeschclass08
