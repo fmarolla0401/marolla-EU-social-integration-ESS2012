@@ -33,3 +33,9 @@ Rotated factor loadings (pattern matrix) and unique variances
     (blanks represent abs(loading)<.4)
 
 */
+
+cd "C:\Users\Frama\Documents\GitHub\marolla-EU-social-integration-ESS2012\output"   // 
+
+
+
+run Table_3.do
